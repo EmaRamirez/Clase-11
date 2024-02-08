@@ -1,0 +1,27 @@
+@using Clase_11.ViewModels;
+
+@model UserEditViewModel
+
+
+
+<h4>Editar usuario</h4>
+<form action="" method="post">
+
+    <div class="mb-3">
+        <label asp-for="UserName"></label>
+        <input type="text" asp-for="UserName">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input type="text" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <select asp-for="Role" asp-items="@Model.Roles">
+           
+        </select>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-warning">Guardar</button>
+    </div>
+
+</form>
